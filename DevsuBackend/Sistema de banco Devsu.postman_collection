@@ -1,0 +1,1666 @@
+{
+	"info": {
+		"_postman_id": "ed1e76e6-730b-465e-aacf-df8b65df4f2a",
+		"name": "Sistema de banco Devsu",
+		"description": "API para sistemas bancarios\n\nContact Support:\n Name: Equipo de Desarrollo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "48129359",
+		"_collection_link": "https://u23326758-3387624.postman.co/workspace/CarlosFabricio's-Workspace~b6a44741-b4f4-4a63-83df-152726c0af0b/collection/48129359-ed1e76e6-730b-465e-aacf-df8b65df4f2a?action=share&source=collection_link&creator=48129359"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "Auth",
+					"item": [
+						{
+							"name": "login",
+							"item": [
+								{
+									"name": "/api/Auth/login",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"identificacion\": \"0101\",\n  \"contrasena\": \"1234\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Auth/login",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Auth",
+												"login"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													},
+													{
+														"key": "Authorization",
+														"value": "<API Key>",
+														"description": "Added as a part of security scheme: apikey"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"contrasena\": \"pariatur qui cupidatat\",\n  \"identificacion\": \"nulla sint cupidatat quis\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/Auth/login",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Auth",
+														"login"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"token\": \"dolore\",\n  \"expiration\": \"1967-09-08T05:49:34.955Z\",\n  \"refreshToken\": \"sed mollit \",\n  \"cliente\": {\n    \"clienteId\": 8651442,\n    \"nombre\": \"id magna consequat incididunt\",\n    \"identificacion\": \"reprehender\"\n  }\n}"
+										},
+										{
+											"name": "/api/Auth/login",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"identificacion\": \"0101\",\n  \"contrasena\": \"1234\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/Auth/login",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Auth",
+														"login"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Date",
+													"value": "Wed, 03 Sep 2025 06:39:05 GMT"
+												},
+												{
+													"key": "Server",
+													"value": "Kestrel"
+												},
+												{
+													"key": "Transfer-Encoding",
+													"value": "chunked"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwidW5pcXVlX25hbWUiOiJKb3NlIExlbWEiLCJyb2xlIjoiQ2xpZW50ZSIsIm5iZiI6MTc1Njg4MTU0NiwiZXhwIjoxNzU2ODg1MTQ2LCJpYXQiOjE3NTY4ODE1NDYsImlzcyI6IkJhbmtpbmdTeXN0ZW0iLCJhdWQiOiJCYW5raW5nU3lzdGVtQ2xpZW50cyJ9.397vHfxzxjhSWOUUWPLCDU2VIdcLP9ScL6fURXj4mAA\",\n    \"expiration\": \"2025-09-03T07:39:06.5321642Z\",\n    \"refreshToken\": \"mdfk3ET/1WHF7j6Ol5RSrPYt3Y8oau5njUDPK5RTCZI=\",\n    \"cliente\": {\n        \"clienteId\": 1,\n        \"nombre\": \"Jose Lema\",\n        \"identificacion\": \"0101\"\n    }\n}"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "refresh",
+							"item": [
+								{
+									"name": "/api/Auth/refresh",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"token\": \"quis minim velit\",\n  \"refreshToken\": \"id ex ad irure\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Auth/refresh",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Auth",
+												"refresh"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													},
+													{
+														"key": "Authorization",
+														"value": "<API Key>",
+														"description": "Added as a part of security scheme: apikey"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"token\": \"quis minim velit\",\n  \"refreshToken\": \"id ex ad irure\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/Auth/refresh",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Auth",
+														"refresh"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"token\": \"dolore\",\n  \"expiration\": \"1967-09-08T05:49:34.955Z\",\n  \"refreshToken\": \"sed mollit \",\n  \"cliente\": {\n    \"clienteId\": 8651442,\n    \"nombre\": \"id magna consequat incididunt\",\n    \"identificacion\": \"reprehender\"\n  }\n}"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "revoke",
+							"item": [
+								{
+									"name": "/api/Auth/revoke",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwidW5pcXVlX25hbWUiOiJKb3NlIExlbWEiLCJyb2xlIjoiQ2xpZW50ZSIsIm5iZiI6MTc1Njg4MTUxNSwiZXhwIjoxNzU2ODg1MTE1LCJpYXQiOjE3NTY4ODE1MTUsImlzcyI6IkJhbmtpbmdTeXN0ZW0iLCJhdWQiOiJCYW5raW5nU3lzdGVtQ2xpZW50cyJ9.qEF23Ec_ROgf7aYbbsD7VvMNlFivcgwPjzHV8qmCV68",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Auth/revoke",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Auth",
+												"revoke"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "<API Key>",
+														"description": "Added as a part of security scheme: apikey"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/Auth/revoke",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Auth",
+														"revoke"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Clientes",
+					"item": [
+						{
+							"name": "{id}",
+							"item": [
+								{
+									"name": "/api/Clientes/:id",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/Clientes/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Clientes",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-60524265",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													},
+													{
+														"key": "Authorization",
+														"value": "<API Key>",
+														"description": "Added as a part of security scheme: apikey"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/Clientes/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Clientes",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"id\": 34872475,\n  \"nombre\": \"exercitatio\",\n  \"genero\": \"aute\",\n  \"edad\": -72129774,\n  \"identificacion\": \"dolore\",\n  \"direccion\": \"aute veniam\",\n  \"telefono\": \"ullamco irure\",\n  \"personaType\": \"non fugiat\",\n  \"clienteId\": -76844536,\n  \"contrasena\": \"sint\",\n  \"estado\": true,\n  \"refreshToken\": \"amet sint ullamco nostrud\",\n  \"refreshTokenExpiry\": \"2024-08-19T19:46:14.615Z\"\n}"
+										}
+									]
+								},
+								{
+									"name": "/api/Clientes/:id",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": 34872475,\n  \"nombre\": \"exercitatio\",\n  \"genero\": \"aute\",\n  \"edad\": -72129774,\n  \"identificacion\": \"dolore\",\n  \"direccion\": \"aute veniam\",\n  \"telefono\": \"ullamco irure\",\n  \"personaType\": \"non fugiat\",\n  \"clienteId\": -76844536,\n  \"contrasena\": \"sint\",\n  \"estado\": true,\n  \"refreshToken\": \"amet sint ullamco nostrud\",\n  \"refreshTokenExpiry\": \"2024-08-19T19:46:14.615Z\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Clientes/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Clientes",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-60524265",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Authorization",
+														"value": "<API Key>",
+														"description": "Added as a part of security scheme: apikey"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"id\": 34872475,\n  \"nombre\": \"exercitatio\",\n  \"genero\": \"aute\",\n  \"edad\": -72129774,\n  \"identificacion\": \"dolore\",\n  \"direccion\": \"aute veniam\",\n  \"telefono\": \"ullamco irure\",\n  \"personaType\": \"non fugiat\",\n  \"clienteId\": -76844536,\n  \"contrasena\": \"sint\",\n  \"estado\": true,\n  \"refreshToken\": \"amet sint ullamco nostrud\",\n  \"refreshTokenExpiry\": \"2024-08-19T19:46:14.615Z\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/Clientes/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Clientes",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "/api/Clientes/:id",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Clientes/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Clientes",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-60524265",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "<API Key>",
+														"description": "Added as a part of security scheme: apikey"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/Clientes/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Clientes",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "/api/Clientes",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Clientes",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Clientes"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											},
+											{
+												"key": "Authorization",
+												"value": "<API Key>",
+												"description": "Added as a part of security scheme: apikey"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/Clientes",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Clientes"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "[\n  {\n    \"id\": 9788875,\n    \"nombre\": \"do amet aute\",\n    \"genero\": \"eu nisi Excepteur\",\n    \"edad\": 94695957,\n    \"identificacion\": \"nisi mollit cillum proident qui\",\n    \"direccion\": \"nostrud\",\n    \"telefono\": \"enim tempor ullamco fugiat cillum\",\n    \"personaType\": \"ullamco anim Ut tempor\",\n    \"clienteId\": 6128078,\n    \"contrasena\": \"quis laborum\",\n    \"estado\": false,\n    \"refreshToken\": \"in ea aliqua est nulla\",\n    \"refreshTokenExpiry\": \"2003-04-20T16:22:02.358Z\"\n  },\n  {\n    \"id\": -59456853,\n    \"nombre\": \"velit\",\n    \"genero\": \"tempor\",\n    \"edad\": 75359678,\n    \"identificacion\": \"aliqua laborum nisi laboris\",\n    \"direccion\": \"Lorem\",\n    \"telefono\": \"elit esse labore ullamco\",\n    \"personaType\": \"dolore esse\",\n    \"clienteId\": 62814036,\n    \"contrasena\": \"ipsum pariatur\",\n    \"estado\": false,\n    \"refreshToken\": \"reprehenderit\",\n    \"refreshTokenExpiry\": \"1992-03-26T19:17:43.476Z\"\n  }\n]"
+								}
+							]
+						},
+						{
+							"name": "/api/Clientes",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": 34872475,\n  \"nombre\": \"exercitatio\",\n  \"genero\": \"aute\",\n  \"edad\": -72129774,\n  \"identificacion\": \"dolore\",\n  \"direccion\": \"aute veniam\",\n  \"telefono\": \"ullamco irure\",\n  \"personaType\": \"non fugiat\",\n  \"clienteId\": -76844536,\n  \"contrasena\": \"sint\",\n  \"estado\": true,\n  \"refreshToken\": \"amet sint ullamco nostrud\",\n  \"refreshTokenExpiry\": \"2024-08-19T19:46:14.615Z\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Clientes",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Clientes"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											},
+											{
+												"key": "Authorization",
+												"value": "<API Key>",
+												"description": "Added as a part of security scheme: apikey"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": 34872475,\n  \"nombre\": \"exercitatio\",\n  \"genero\": \"aute\",\n  \"edad\": -72129774,\n  \"identificacion\": \"dolore\",\n  \"direccion\": \"aute veniam\",\n  \"telefono\": \"ullamco irure\",\n  \"personaType\": \"non fugiat\",\n  \"clienteId\": -76844536,\n  \"contrasena\": \"sint\",\n  \"estado\": true,\n  \"refreshToken\": \"amet sint ullamco nostrud\",\n  \"refreshTokenExpiry\": \"2024-08-19T19:46:14.615Z\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Clientes",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Clientes"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"id\": 34872475,\n  \"nombre\": \"exercitatio\",\n  \"genero\": \"aute\",\n  \"edad\": -72129774,\n  \"identificacion\": \"dolore\",\n  \"direccion\": \"aute veniam\",\n  \"telefono\": \"ullamco irure\",\n  \"personaType\": \"non fugiat\",\n  \"clienteId\": -76844536,\n  \"contrasena\": \"sint\",\n  \"estado\": true,\n  \"refreshToken\": \"amet sint ullamco nostrud\",\n  \"refreshTokenExpiry\": \"2024-08-19T19:46:14.615Z\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Cuentas",
+					"item": [
+						{
+							"name": "{id}",
+							"item": [
+								{
+									"name": "/api/Cuentas/:id",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/Cuentas/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Cuentas",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-60524265",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													},
+													{
+														"key": "Authorization",
+														"value": "<API Key>",
+														"description": "Added as a part of security scheme: apikey"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/Cuentas/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Cuentas",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"cuentaId\": -57504474,\n  \"numeroCuenta\": -99188154,\n  \"tipoCuenta\": \"culpa in ex\",\n  \"saldoInicial\": -80576667.14397067,\n  \"estado\": false,\n  \"clienteId\": -39347862,\n  \"cliente\": {\n    \"id\": -90480611,\n    \"nombre\": \"proid\",\n    \"genero\": \"dolor aliqua adipisicing\",\n    \"edad\": -64819556,\n    \"identificacion\": \"ullamco incididunt sit\",\n    \"direccion\": \"commodo elit tempor\",\n    \"telefono\": \"aliqua eiusmod dolore nostrud\",\n    \"personaType\": \"nostrud\",\n    \"clienteId\": 1704458,\n    \"contrasena\": \"magna quis\",\n    \"estado\": true,\n    \"refreshToken\": \"minim qui\",\n    \"refreshTokenExpiry\": \"1952-03-11T11:40:23.084Z\"\n  },\n  \"movimientos\": [\n    {\n      \"movimientoId\": -78166285,\n      \"fecha\": \"1982-05-09T14:23:45.061Z\",\n      \"tipoMovimiento\": \"esse aute ullamco ad\",\n      \"valor\": -57195756.174724236,\n      \"saldo\": 21096658.64440635,\n      \"cuentaId\": 74470183,\n      \"cuenta\": {\n        \"value\": \"<Circular reference to #/components/schemas/Cuenta detected>\"\n      }\n    },\n    {\n      \"movimientoId\": -8369420,\n      \"fecha\": \"1961-03-25T09:39:07.807Z\",\n      \"tipoMovimiento\": \"sed\",\n      \"valor\": -5726471.559889257,\n      \"saldo\": 74099049.30172789,\n      \"cuentaId\": 76071541,\n      \"cuenta\": {\n        \"value\": \"<Circular reference to #/components/schemas/Cuenta detected>\"\n      }\n    }\n  ]\n}"
+										}
+									]
+								},
+								{
+									"name": "/api/Cuentas/:id",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"cuentaId\": -57504474,\n  \"numeroCuenta\": -99188154,\n  \"tipoCuenta\": \"culpa in ex\",\n  \"saldoInicial\": -80576667.14397067,\n  \"estado\": false,\n  \"clienteId\": -39347862,\n  \"cliente\": {\n    \"id\": -90480611,\n    \"nombre\": \"proid\",\n    \"genero\": \"dolor aliqua adipisicing\",\n    \"edad\": -64819556,\n    \"identificacion\": \"ullamco incididunt sit\",\n    \"direccion\": \"commodo elit tempor\",\n    \"telefono\": \"aliqua eiusmod dolore nostrud\",\n    \"personaType\": \"nostrud\",\n    \"clienteId\": 1704458,\n    \"contrasena\": \"magna quis\",\n    \"estado\": true,\n    \"refreshToken\": \"minim qui\",\n    \"refreshTokenExpiry\": \"1952-03-11T11:40:23.084Z\"\n  },\n  \"movimientos\": [\n    {\n      \"movimientoId\": -78166285,\n      \"fecha\": \"1982-05-09T14:23:45.061Z\",\n      \"tipoMovimiento\": \"esse aute ullamco ad\",\n      \"valor\": -57195756.174724236,\n      \"saldo\": 21096658.64440635,\n      \"cuentaId\": 74470183,\n      \"cuenta\": {\n        \"value\": \"<Circular reference to #/components/schemas/Cuenta detected>\"\n      }\n    },\n    {\n      \"movimientoId\": -8369420,\n      \"fecha\": \"1961-03-25T09:39:07.807Z\",\n      \"tipoMovimiento\": \"sed\",\n      \"valor\": -5726471.559889257,\n      \"saldo\": 74099049.30172789,\n      \"cuentaId\": 76071541,\n      \"cuenta\": {\n        \"value\": \"<Circular reference to #/components/schemas/Cuenta detected>\"\n      }\n    }\n  ]\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Cuentas/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Cuentas",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-60524265",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Authorization",
+														"value": "<API Key>",
+														"description": "Added as a part of security scheme: apikey"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"cuentaId\": -57504474,\n  \"numeroCuenta\": -99188154,\n  \"tipoCuenta\": \"culpa in ex\",\n  \"saldoInicial\": -80576667.14397067,\n  \"estado\": false,\n  \"clienteId\": -39347862,\n  \"cliente\": {\n    \"id\": -90480611,\n    \"nombre\": \"proid\",\n    \"genero\": \"dolor aliqua adipisicing\",\n    \"edad\": -64819556,\n    \"identificacion\": \"ullamco incididunt sit\",\n    \"direccion\": \"commodo elit tempor\",\n    \"telefono\": \"aliqua eiusmod dolore nostrud\",\n    \"personaType\": \"nostrud\",\n    \"clienteId\": 1704458,\n    \"contrasena\": \"magna quis\",\n    \"estado\": true,\n    \"refreshToken\": \"minim qui\",\n    \"refreshTokenExpiry\": \"1952-03-11T11:40:23.084Z\"\n  },\n  \"movimientos\": [\n    {\n      \"movimientoId\": -78166285,\n      \"fecha\": \"1982-05-09T14:23:45.061Z\",\n      \"tipoMovimiento\": \"esse aute ullamco ad\",\n      \"valor\": -57195756.174724236,\n      \"saldo\": 21096658.64440635,\n      \"cuentaId\": 74470183,\n      \"cuenta\": {\n        \"value\": \"<Circular reference to #/components/schemas/Cuenta detected>\"\n      }\n    },\n    {\n      \"movimientoId\": -8369420,\n      \"fecha\": \"1961-03-25T09:39:07.807Z\",\n      \"tipoMovimiento\": \"sed\",\n      \"valor\": -5726471.559889257,\n      \"saldo\": 74099049.30172789,\n      \"cuentaId\": 76071541,\n      \"cuenta\": {\n        \"value\": \"<Circular reference to #/components/schemas/Cuenta detected>\"\n      }\n    }\n  ]\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/Cuentas/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Cuentas",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "/api/Cuentas/:id",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Cuentas/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Cuentas",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-60524265",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "<API Key>",
+														"description": "Added as a part of security scheme: apikey"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/Cuentas/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Cuentas",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "/api/Cuentas",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Cuentas",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Cuentas"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											},
+											{
+												"key": "Authorization",
+												"value": "<API Key>",
+												"description": "Added as a part of security scheme: apikey"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/Cuentas",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Cuentas"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "[\n  {\n    \"cuentaId\": 53279164,\n    \"numeroCuenta\": 71226545,\n    \"tipoCuenta\": \"occaecat et do\",\n    \"saldoInicial\": -11433915.972234711,\n    \"estado\": true,\n    \"clienteId\": 27544180,\n    \"cliente\": {\n      \"id\": -96524114,\n      \"nombre\": \"anim\",\n      \"genero\": \"aute a\",\n      \"edad\": -51705175,\n      \"identificacion\": \"eiusmod sint adipisicing nisi\",\n      \"direccion\": \"et sint\",\n      \"telefono\": \"cupidatat ullamco magna eu\",\n      \"personaType\": \"et in minim exercitation\",\n      \"clienteId\": 52018722,\n      \"contrasena\": \"laborum Excepteur cupidatat\",\n      \"estado\": false,\n      \"refreshToken\": \"reprehenderit Ut exercitation in\",\n      \"refreshTokenExpiry\": \"1967-05-14T17:34:29.476Z\"\n    },\n    \"movimientos\": [\n      {\n        \"movimientoId\": 76170785,\n        \"fecha\": \"2006-04-13T14:09:12.634Z\",\n        \"tipoMovimiento\": \"in nulla et veniam\",\n        \"valor\": -37699717.028079726,\n        \"saldo\": -89801870.1886981,\n        \"cuentaId\": -91326573,\n        \"cuenta\": {\n          \"value\": \"<Circular reference to #/components/schemas/Cuenta detected>\"\n        }\n      },\n      {\n        \"movimientoId\": 459179,\n        \"fecha\": \"2019-08-11T15:08:51.190Z\",\n        \"tipoMovimiento\": \"consequat\",\n        \"valor\": 30022273.24324447,\n        \"saldo\": -17069349.593928516,\n        \"cuentaId\": 94742247,\n        \"cuenta\": {\n          \"value\": \"<Circular reference to #/components/schemas/Cuenta detected>\"\n        }\n      }\n    ]\n  },\n  {\n    \"cuentaId\": 19754188,\n    \"numeroCuenta\": -99297555,\n    \"tipoCuenta\": \"sunt sit\",\n    \"saldoInicial\": -38313329.227633774,\n    \"estado\": false,\n    \"clienteId\": 19013845,\n    \"cliente\": {\n      \"id\": -82063341,\n      \"nombre\": \"laboris deserunt fugiat\",\n      \"genero\": \"velit occaecat aute\",\n      \"edad\": -22989121,\n      \"identificacion\": \"eiusmod culpa\",\n      \"direccion\": \"et\",\n      \"telefono\": \"est nulla elit irure\",\n      \"personaType\": \"commodo aute occaecat\",\n      \"clienteId\": -90708825,\n      \"contrasena\": \"al\",\n      \"estado\": true,\n      \"refreshToken\": \"do quis id esse\",\n      \"refreshTokenExpiry\": \"1966-10-31T05:25:46.268Z\"\n    },\n    \"movimientos\": [\n      {\n        \"movimientoId\": -64459017,\n        \"fecha\": \"2005-11-13T01:46:17.521Z\",\n        \"tipoMovimiento\": \"ex voluptate\",\n        \"valor\": 58485699.654435694,\n        \"saldo\": 30658161.243634656,\n        \"cuentaId\": 60766212,\n        \"cuenta\": {\n          \"value\": \"<Circular reference to #/components/schemas/Cuenta detected>\"\n        }\n      },\n      {\n        \"movimientoId\": 28066473,\n        \"fecha\": \"1997-10-25T12:25:17.863Z\",\n        \"tipoMovimiento\": \"laborum Lorem sed voluptate\",\n        \"valor\": -89144929.46470588,\n        \"saldo\": -68238582.48285174,\n        \"cuentaId\": 93595113,\n        \"cuenta\": {\n          \"value\": \"<Circular reference to #/components/schemas/Cuenta detected>\"\n        }\n      }\n    ]\n  }\n]"
+								}
+							]
+						},
+						{
+							"name": "/api/Cuentas",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"cuentaId\": -57504474,\n  \"numeroCuenta\": -99188154,\n  \"tipoCuenta\": \"culpa in ex\",\n  \"saldoInicial\": -80576667.14397067,\n  \"estado\": false,\n  \"clienteId\": -39347862,\n  \"cliente\": {\n    \"id\": -90480611,\n    \"nombre\": \"proid\",\n    \"genero\": \"dolor aliqua adipisicing\",\n    \"edad\": -64819556,\n    \"identificacion\": \"ullamco incididunt sit\",\n    \"direccion\": \"commodo elit tempor\",\n    \"telefono\": \"aliqua eiusmod dolore nostrud\",\n    \"personaType\": \"nostrud\",\n    \"clienteId\": 1704458,\n    \"contrasena\": \"magna quis\",\n    \"estado\": true,\n    \"refreshToken\": \"minim qui\",\n    \"refreshTokenExpiry\": \"1952-03-11T11:40:23.084Z\"\n  },\n  \"movimientos\": [\n    {\n      \"movimientoId\": -78166285,\n      \"fecha\": \"1982-05-09T14:23:45.061Z\",\n      \"tipoMovimiento\": \"esse aute ullamco ad\",\n      \"valor\": -57195756.174724236,\n      \"saldo\": 21096658.64440635,\n      \"cuentaId\": 74470183,\n      \"cuenta\": {\n        \"value\": \"<Circular reference to #/components/schemas/Cuenta detected>\"\n      }\n    },\n    {\n      \"movimientoId\": -8369420,\n      \"fecha\": \"1961-03-25T09:39:07.807Z\",\n      \"tipoMovimiento\": \"sed\",\n      \"valor\": -5726471.559889257,\n      \"saldo\": 74099049.30172789,\n      \"cuentaId\": 76071541,\n      \"cuenta\": {\n        \"value\": \"<Circular reference to #/components/schemas/Cuenta detected>\"\n      }\n    }\n  ]\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Cuentas",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Cuentas"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											},
+											{
+												"key": "Authorization",
+												"value": "<API Key>",
+												"description": "Added as a part of security scheme: apikey"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"cuentaId\": -57504474,\n  \"numeroCuenta\": -99188154,\n  \"tipoCuenta\": \"culpa in ex\",\n  \"saldoInicial\": -80576667.14397067,\n  \"estado\": false,\n  \"clienteId\": -39347862,\n  \"cliente\": {\n    \"id\": -90480611,\n    \"nombre\": \"proid\",\n    \"genero\": \"dolor aliqua adipisicing\",\n    \"edad\": -64819556,\n    \"identificacion\": \"ullamco incididunt sit\",\n    \"direccion\": \"commodo elit tempor\",\n    \"telefono\": \"aliqua eiusmod dolore nostrud\",\n    \"personaType\": \"nostrud\",\n    \"clienteId\": 1704458,\n    \"contrasena\": \"magna quis\",\n    \"estado\": true,\n    \"refreshToken\": \"minim qui\",\n    \"refreshTokenExpiry\": \"1952-03-11T11:40:23.084Z\"\n  },\n  \"movimientos\": [\n    {\n      \"movimientoId\": -78166285,\n      \"fecha\": \"1982-05-09T14:23:45.061Z\",\n      \"tipoMovimiento\": \"esse aute ullamco ad\",\n      \"valor\": -57195756.174724236,\n      \"saldo\": 21096658.64440635,\n      \"cuentaId\": 74470183,\n      \"cuenta\": {\n        \"value\": \"<Circular reference to #/components/schemas/Cuenta detected>\"\n      }\n    },\n    {\n      \"movimientoId\": -8369420,\n      \"fecha\": \"1961-03-25T09:39:07.807Z\",\n      \"tipoMovimiento\": \"sed\",\n      \"valor\": -5726471.559889257,\n      \"saldo\": 74099049.30172789,\n      \"cuentaId\": 76071541,\n      \"cuenta\": {\n        \"value\": \"<Circular reference to #/components/schemas/Cuenta detected>\"\n      }\n    }\n  ]\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Cuentas",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Cuentas"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"cuentaId\": -57504474,\n  \"numeroCuenta\": -99188154,\n  \"tipoCuenta\": \"culpa in ex\",\n  \"saldoInicial\": -80576667.14397067,\n  \"estado\": false,\n  \"clienteId\": -39347862,\n  \"cliente\": {\n    \"id\": -90480611,\n    \"nombre\": \"proid\",\n    \"genero\": \"dolor aliqua adipisicing\",\n    \"edad\": -64819556,\n    \"identificacion\": \"ullamco incididunt sit\",\n    \"direccion\": \"commodo elit tempor\",\n    \"telefono\": \"aliqua eiusmod dolore nostrud\",\n    \"personaType\": \"nostrud\",\n    \"clienteId\": 1704458,\n    \"contrasena\": \"magna quis\",\n    \"estado\": true,\n    \"refreshToken\": \"minim qui\",\n    \"refreshTokenExpiry\": \"1952-03-11T11:40:23.084Z\"\n  },\n  \"movimientos\": [\n    {\n      \"movimientoId\": -78166285,\n      \"fecha\": \"1982-05-09T14:23:45.061Z\",\n      \"tipoMovimiento\": \"esse aute ullamco ad\",\n      \"valor\": -57195756.174724236,\n      \"saldo\": 21096658.64440635,\n      \"cuentaId\": 74470183,\n      \"cuenta\": {\n        \"value\": \"<Circular reference to #/components/schemas/Cuenta detected>\"\n      }\n    },\n    {\n      \"movimientoId\": -8369420,\n      \"fecha\": \"1961-03-25T09:39:07.807Z\",\n      \"tipoMovimiento\": \"sed\",\n      \"valor\": -5726471.559889257,\n      \"saldo\": 74099049.30172789,\n      \"cuentaId\": 76071541,\n      \"cuenta\": {\n        \"value\": \"<Circular reference to #/components/schemas/Cuenta detected>\"\n      }\n    }\n  ]\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Movimientos",
+					"item": [
+						{
+							"name": "{id}",
+							"item": [
+								{
+									"name": "/api/Movimientos/:id",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/Movimientos/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Movimientos",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-60524265",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													},
+													{
+														"key": "Authorization",
+														"value": "<API Key>",
+														"description": "Added as a part of security scheme: apikey"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/Movimientos/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Movimientos",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"movimientoId\": -83228742,\n  \"fecha\": \"1951-12-07T16:22:28.575Z\",\n  \"tipoMovimiento\": \"do enim laboris irure\",\n  \"valor\": -54580265.31687064,\n  \"saldo\": 51922358.99962711,\n  \"cuentaId\": -2272213,\n  \"cuenta\": {\n    \"value\": \"<Circular reference to #/components/schemas/Cuenta detected>\"\n  }\n}"
+										}
+									]
+								},
+								{
+									"name": "/api/Movimientos/:id",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"movimientoId\": -83228742,\n  \"fecha\": \"1951-12-07T16:22:28.575Z\",\n  \"tipoMovimiento\": \"do enim laboris irure\",\n  \"valor\": -54580265.31687064,\n  \"saldo\": 51922358.99962711,\n  \"cuentaId\": -2272213,\n  \"cuenta\": {\n    \"value\": \"<Circular reference to #/components/schemas/Cuenta detected>\"\n  }\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Movimientos/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Movimientos",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-60524265",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Authorization",
+														"value": "<API Key>",
+														"description": "Added as a part of security scheme: apikey"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"movimientoId\": -83228742,\n  \"fecha\": \"1951-12-07T16:22:28.575Z\",\n  \"tipoMovimiento\": \"do enim laboris irure\",\n  \"valor\": -54580265.31687064,\n  \"saldo\": 51922358.99962711,\n  \"cuentaId\": -2272213,\n  \"cuenta\": {\n    \"value\": \"<Circular reference to #/components/schemas/Cuenta detected>\"\n  }\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/Movimientos/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Movimientos",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "/api/Movimientos/:id",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Movimientos/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Movimientos",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-60524265",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "<API Key>",
+														"description": "Added as a part of security scheme: apikey"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/Movimientos/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Movimientos",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "/api/Movimientos",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwidW5pcXVlX25hbWUiOiJKb3NlIExlbWEiLCJyb2xlIjoiQ2xpZW50ZSIsIm5iZiI6MTc1Njg4MTUxNSwiZXhwIjoxNzU2ODg1MTE1LCJpYXQiOjE3NTY4ODE1MTUsImlzcyI6IkJhbmtpbmdTeXN0ZW0iLCJhdWQiOiJCYW5raW5nU3lzdGVtQ2xpZW50cyJ9.qEF23Ec_ROgf7aYbbsD7VvMNlFivcgwPjzHV8qmCV68",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Movimientos",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Movimientos"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											},
+											{
+												"key": "Authorization",
+												"value": "<API Key>",
+												"description": "Added as a part of security scheme: apikey"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/Movimientos",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Movimientos"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "[\n  {\n    \"movimientoId\": -1940328,\n    \"fecha\": \"1978-01-18T02:34:52.391Z\",\n    \"tipoMovimiento\": \"in ad aliquip Lorem consequat\",\n    \"valor\": -3848564.271085307,\n    \"saldo\": -69688279.94089296,\n    \"cuentaId\": -62788349,\n    \"cuenta\": {\n      \"value\": \"<Circular reference to #/components/schemas/Cuenta detected>\"\n    }\n  },\n  {\n    \"movimientoId\": -77791502,\n    \"fecha\": \"1983-01-14T07:49:48.459Z\",\n    \"tipoMovimiento\": \"consectetur reprehenderit\",\n    \"valor\": 50825026.62351921,\n    \"saldo\": 59465959.13341564,\n    \"cuentaId\": -9523094,\n    \"cuenta\": {\n      \"value\": \"<Circular reference to #/components/schemas/Cuenta detected>\"\n    }\n  }\n]"
+								}
+							]
+						},
+						{
+							"name": "/api/Movimientos",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"movimientoId\": -83228742,\n  \"fecha\": \"1951-12-07T16:22:28.575Z\",\n  \"tipoMovimiento\": \"do enim laboris irure\",\n  \"valor\": -54580265.31687064,\n  \"saldo\": 51922358.99962711,\n  \"cuentaId\": -2272213,\n  \"cuenta\": {\n    \"value\": \"<Circular reference to #/components/schemas/Cuenta detected>\"\n  }\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Movimientos",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Movimientos"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											},
+											{
+												"key": "Authorization",
+												"value": "<API Key>",
+												"description": "Added as a part of security scheme: apikey"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"movimientoId\": -83228742,\n  \"fecha\": \"1951-12-07T16:22:28.575Z\",\n  \"tipoMovimiento\": \"do enim laboris irure\",\n  \"valor\": -54580265.31687064,\n  \"saldo\": 51922358.99962711,\n  \"cuentaId\": -2272213,\n  \"cuenta\": {\n    \"value\": \"<Circular reference to #/components/schemas/Cuenta detected>\"\n  }\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Movimientos",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Movimientos"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"movimientoId\": -83228742,\n  \"fecha\": \"1951-12-07T16:22:28.575Z\",\n  \"tipoMovimiento\": \"do enim laboris irure\",\n  \"valor\": -54580265.31687064,\n  \"saldo\": 51922358.99962711,\n  \"cuentaId\": -2272213,\n  \"cuenta\": {\n    \"value\": \"<Circular reference to #/components/schemas/Cuenta detected>\"\n  }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Reportes",
+					"item": [
+						{
+							"name": "/api/Reportes",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwidW5pcXVlX25hbWUiOiJKb3NlIExlbWEiLCJyb2xlIjoiQ2xpZW50ZSIsIm5iZiI6MTc1Njg4MTY5NSwiZXhwIjoxNzU2ODg1Mjk1LCJpYXQiOjE3NTY4ODE2OTUsImlzcyI6IkJhbmtpbmdTeXN0ZW0iLCJhdWQiOiJCYW5raW5nU3lzdGVtQ2xpZW50cyJ9.cpWR2uY5H-_ZwikejnlG1moM4fDT4FQo5XBNECLP8Qc",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Reportes?FechaInicio=1975-07-17T05:38:42.820Z&FechaFin=1975-07-17T05:38:42.820Z&ClienteId=405196359&Formato=aute non",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Reportes"
+									],
+									"query": [
+										{
+											"key": "FechaInicio",
+											"value": "1975-07-17T05:38:42.820Z"
+										},
+										{
+											"key": "FechaFin",
+											"value": "1975-07-17T05:38:42.820Z"
+										},
+										{
+											"key": "ClienteId",
+											"value": "405196359"
+										},
+										{
+											"key": "Formato",
+											"value": "aute non"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											},
+											{
+												"key": "Authorization",
+												"value": "<API Key>",
+												"description": "Added as a part of security scheme: apikey"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/Reportes?FechaInicio=1975-07-17T05:38:42.820Z&FechaFin=1975-07-17T05:38:42.820Z&ClienteId=405196359&Formato=aute non",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Reportes"
+											],
+											"query": [
+												{
+													"key": "FechaInicio",
+													"value": "1975-07-17T05:38:42.820Z",
+													"description": "(Required) "
+												},
+												{
+													"key": "FechaFin",
+													"value": "1975-07-17T05:38:42.820Z",
+													"description": "(Required) "
+												},
+												{
+													"key": "ClienteId",
+													"value": "405196359",
+													"description": "(Required) "
+												},
+												{
+													"key": "Formato",
+													"value": "aute non"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"success\": true,\n  \"message\": \"amet culpa aliqua proident Lorem\",\n  \"movimientos\": [\n    {\n      \"fecha\": \"1953-11-03T09:19:21.535Z\",\n      \"cliente\": \"esse eiusmod\",\n      \"numeroCuenta\": 4502643,\n      \"tipoCuenta\": \"magna velit\",\n      \"saldoInicial\": -59282045.3564618,\n      \"estadoCuenta\": true,\n      \"movimiento\": 97220850.15319574,\n      \"saldoDisponible\": 29220634.038173005,\n      \"tipoMovimiento\": \"ut sit dolor\"\n    },\n    {\n      \"fecha\": \"2013-08-07T08:53:36.447Z\",\n      \"cliente\": \"in eiusmod eu magna in\",\n      \"numeroCuenta\": 8260951,\n      \"tipoCuenta\": \"nisi culpa anim\",\n      \"saldoInicial\": 52154998.7270419,\n      \"estadoCuenta\": false,\n      \"movimiento\": 9214039.620999247,\n      \"saldoDisponible\": -19754558.536823824,\n      \"tipoMovimiento\": \"dolor non\"\n    }\n  ],\n  \"resumen\": {\n    \"totalCreditos\": 91318544.0440917,\n    \"totalDebitos\": -5933023.846095368,\n    \"saldoFinal\": 17455905.389146358,\n    \"totalMovimientos\": 80503553,\n    \"cuentasInvolucradas\": -21621632,\n    \"periodoInicio\": \"1985-06-14T19:53:57.280Z\",\n    \"periodoFin\": \"1998-09-14T13:00:29.333Z\"\n  },\n  \"pdfBase64\": \"sunt sed\",\n  \"fechaGeneracion\": \"1968-12-16T05:09:23.798Z\"\n}"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "key",
+				"value": "Authorization",
+				"type": "string"
+			},
+			{
+				"key": "value",
+				"value": "{{apiKey}}",
+				"type": "string"
+			},
+			{
+				"key": "in",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "/"
+		}
+	]
+}
